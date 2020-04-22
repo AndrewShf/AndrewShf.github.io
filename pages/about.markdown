@@ -18,7 +18,7 @@ Contact me:
 
 # Colophon
 
-The main material of this website was originally created by [Xiaodong Xu][X]; [Jekyll][j] and [Github Pages][g] were used to built this web page; the style was inspired by [hg tip][h]
+The main material of this website(css, html) was originally created by [Xiaodong Xu][X]; [Jekyll][j] and [Github Pages][g] were used to built this web page; the style was inspired by [hg tip][h]
 
 [swjtu]: http://sist.swjtu.edu.cn/index.do?action=index
 [g]: https://github.com/AndrewShf

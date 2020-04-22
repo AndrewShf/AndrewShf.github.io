@@ -1,5 +1,12 @@
-markdown: redcarpet
+kramdown:
+  auto_ids: true
+  input: GFM
 redcarpet:
     extensions: ["fenced_code_blocks", "autolink", "tables"]
 pygments: true
 permalink: ./:year/:month/:day/:title.html
+
+# 域名配置
+# baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
+domainUrl: http://AndrewShf.github.io''
+baseurl: ''

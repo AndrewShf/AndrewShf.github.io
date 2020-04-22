@@ -10,7 +10,7 @@ title: Home
         <h2>{{ post.title }} <a href="{{ post.url }}" title="Permanent link to: '{{ post.title }}'">&raquo;</a></h2>
         {% endif %}
         <p id="tip-info">{{ post.date | date:"%B %e, %Y" }}</p>
-        <!-- {{ post.content }} -->
+        {{ post.content }}
     {% endfor %}
     <p><a href="{{ site.baseurl }}pages/archives.html">More &raquo;</a></p>
 </div>

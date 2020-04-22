@@ -29,7 +29,10 @@ body {background: #fff; color: #000; font: 1em/1.5em "Helvetica Neue", Helvetica
 html>body {font-size: 16px;}
 
 img {display: inline-block; vertical-align: bottom;}
-
+img[src*="#center"] {
+  display: block;
+  margin: auto;
+ }
 h1,h2,h3,h4,h5,h6,strong,b,dt,th {font-weight: 700;}
 address,cite,em,i,caption,dfn,var {font-style: italic;}
 

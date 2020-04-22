@@ -15,6 +15,15 @@
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/hgtip/aal.css">
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/hgtip/calluna.css">
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/hgtip/style.css">
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$','$']]
+                }
+            });
+        </script>
     </head>
     <body>
         <div id="main-wrap">
@@ -33,7 +42,7 @@
                 {{ content }}
             </div>
             <div id="footer">
-                my other accounts: <a href="https://github.com/AndrewShf">github</a> / <a href="https://www.linkedin.com/in/haifeng-shi-732912191/">linkedin</a> / <a href="https://www.cnblogs.com/lecoz/">cnblog</a>
+                other profiles: <a href="https://github.com/AndrewShf">github</a> / <a href="https://www.linkedin.com/in/haifeng-shi-732912191/">linkedin</a> / <a href="https://www.cnblogs.com/lecoz/">cnblog</a>
             </div>
         </div>
     </body>

@@ -60,7 +60,7 @@ div#header h1 {
     text-shadow: 0px 1px 1px #fff; }
     div#header h1 a:hover {
       text-decoration: none;
-      color: #ff007f; }
+      color: #FFA07A; }
 
 p#tagline {
   color: #666666;
@@ -81,7 +81,7 @@ div#footer {
 
 /* Link styles. */
 a {
-  color: #ff007f;
+  color: #8B8378;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }

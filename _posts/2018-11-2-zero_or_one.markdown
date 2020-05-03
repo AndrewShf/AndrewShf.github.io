@@ -1,6 +1,6 @@
 ---
 layout: default
-title: zero or one (minimal path)
+title: 0 或 1 (minimal path)
 date: 2018-11-2 11:23
 post-link:
 ---

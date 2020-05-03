@@ -1,6 +1,6 @@
 ---
 layout: default
-title: LeetCode-CN-2020 Spring 
+title: LeetCode-CN-2020 春季赛（团体+个人） 
 date: 2020-04-24 11:23
 post-link:
 ---
@@ -130,13 +130,13 @@ public:
         int len = points.size();
         // find the first point on convex hull
         for (int i = 0; i < len; ++i) if (points[i][0] < points[cur][0]) cur = i;
-        vector<int> ans;
+        vector<int> ans; // answer
         ans.push_back(cur);
-        vector<int> vis(len+5, 0);
+        vector<int> vis(len+5, 0); // mark visited point on convex hull
         vis[cur] = 1;
         for (int i = 0; i < len-2; ++i) {
             char dir = direction[i];
-            int next = -1; // find next point on convext hull
+            int next = -1; // find next point on convex hull
             for (int j = 0; j < len; ++j) {
                 if (vis[j]) continue;
                 if (next == -1) next = j;

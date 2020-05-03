@@ -1,0 +1,80 @@
+---
+layout: math
+title: Dilworth定理
+date: 2020-04-26 11:23
+post-link:
+---
+
+## Dilworth 定理
+
+### 引入
+
+​	最开始是在复习基础dp的时候，发现的这个定理。 题目在这里[最少拦截系统][problem]
+
+### 解法
+
+​	解决这道问题本身很简单了。一个是贪心，复杂度可以达到O(n * log(n))，代码附在了最后面。核心就是一个小数应该匹配前面比它最近（贪心），且大的数（满足题意）。找到后换该数为这个小数，之后二分查找给定值。
+
+​	第二个思路是用线段树，查找一个小数应该匹配前面比它最近（贪心），且大的数（满足题意）
+
+### 思考
+
+​	转念一想，这题的代码实现岂不是就在求... LIS，最长上升序列？
+
+​	网上一查还真是，有个Dilworth定理就可以用来证明两个问题等价。
+
+### Dilworth定理的阐述
+
++ 偏序/链/反链的基础概念
+  + 设A是一个非空集，P是A上的一个关系，若关系P是自反的、反对称的、和传递的，则称P是集合A上的偏序关系。***该定理是在偏序集中的定理***
+  + 一个***反链A***是X的一个子集，它的任意两个元素都不能进行比较。
+  + 一个***链C***是X的一个子集，它的任意两个元素都可比。
+
++ 定理1 令（X,≤）是一个***有限偏序集（非全序）***，并令r是其最大链的大小。则X可以被划分成r个但不能再少的反链。
++ 定理2 其对偶定理称为[Dilworth][dilworth]定理，令（X,≤）是一个***有限偏序集***，并令m是反链的最大的大小。则X可以被划分成m个但不能再少的链。
++ 在上述题目中偏序关系是***数值小于等于关系+位置小于关系***；可得到，反链为上升序列（上升序列中，若数值满足小于等于关系，位置关系就是大于关系）。**所以得到了两者问题等价**
+
+### Dilworth定理的证明
+
+​	该作者证明的很好，我就不瞎掺和了。[Dilworth对偶定理的证明][proof] plus，有空可以补一下作者提到的题。
+
++ 反证法，设p为反链最小个数，r为最长链长度
++ 证明p>=r时，利用了最大链的性质
++ 证明r>=p时，将原序列不断按极小元集合拆分，每个集合为反链，所有集合取一个元素组合起来为链。
+
+### CODE
+
+最后附上贪心题解的代码
+
+```c++
+const int N = 1e6;
+int n;
+int a[N];
+int up[N];
+int main() {
+    while (scanf("%d", &n) == 1) {
+        int ans = 0;
+        for (int i = 0; i < n; ++i) {
+            scanf("%d", a+i);
+            if (i == 0) {
+                up[0] = a[0];
+                ans++;
+            } else {
+                // upper_bound: return ... that > given value
+                // lower bound return [first, last )range the first element that >= given value
+                int pos = lower_bound(up, up+ans, a[i])-up; 
+                if (pos == ans) ans++;
+                up[pos] = a[i];
+            }
+        }
+        printf("%d\n", ans);
+    }
+	return 0;
+}
+```
+
+
+
+[problem]: <https://vjudge.net/problem/HDU-1257>
+[dilworth]: <https://baike.baidu.com/item/%E7%8B%84%E5%B0%94%E6%B2%83%E6%96%AF%E5%AE%9A%E7%90%86/18900593?fromtitle=Dilworth%E5%AE%9A%E7%90%86&amp;fromid=5489361>
+[proof]:<https://blog.csdn.net/xuzengqiang/article/details/7266034>

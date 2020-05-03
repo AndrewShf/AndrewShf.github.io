@@ -11,6 +11,7 @@ title: Personal blogs
 + [刘未鹏的博客][liu]
 + [Matrix67][ma]
 + [Miskcoo's blog][mi]
++ [zhenweiliu's blog][zhen]
 
 
 [lu]: https://www.changhai.org/index.php
@@ -18,3 +19,4 @@ title: Personal blogs
 [mi]: http://blog.miskcoo.com/about
 [ma]: http://www.matrix67.com/
 [liu]: http://mindhacks.cn/
+[zhen]:<http://zhenweiliu.gitee.io/blog/>

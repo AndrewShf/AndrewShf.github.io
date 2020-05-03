@@ -6,7 +6,7 @@ title: About
 # About me
 
 Hello, this is Haifeng Shi. I am currently a fourth-year student at [Southwest Jiaotong University][swjtu],
-majoring in Computer Science and Technology. As an undergraduate student, I have broad interests in CS, including Data Mining, Artificial Intelligence, Computer Music, and Algorithm. In a long run, my ambition is to find a research-related job and give back to opensource community by making useful projects. 
+majoring in Computer Science and Technology. As an undergraduate student, the journey of my exploration is more like *BFS* rather than *DFS*. In a long run, my ambition is to find a research-related job and give back to open source community by making useful projects. 
 
 Here is my [R&eacute;sum&eacute;][r]
 

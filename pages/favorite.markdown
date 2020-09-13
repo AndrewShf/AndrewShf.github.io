@@ -3,7 +3,7 @@ layout: page
 title: Favorite
 ---
 
-<!-- # {{ page.title }} -->
+# {{ page.title }}
 
 ***Music***
 

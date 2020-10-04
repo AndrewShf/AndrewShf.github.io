@@ -6,7 +6,7 @@ title: Projects and Notes
 # {{ page.title }}
 
 * [EMO-CD project][CD]: Evolutionary multi-objective community detection project
-* [MOEA/D translation][moead]: Full Chinese translation of Multi-objective Evolutional Algorithm based on decomposition (Author: Qingfu Zhang)
+* [MOEA/D translation][moead]: Chinese translation of Multi-objective Evolutional Algorithm based on decomposition (Author: Qingfu Zhang)
 * [Deep Learning Summary][dln]: Note from Cousera course taught by Andrew Ng (Chinese)
 
 [CD]: https://drive.google.com/drive/folders/14ZfAZt9onaA50MtaHRvsBNtcsyAGQCWB?usp=sharing

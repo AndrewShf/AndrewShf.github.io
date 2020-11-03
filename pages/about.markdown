@@ -7,7 +7,7 @@ title: About
 
 Hello, this is Haifeng Shi. I received my B.E. degree in Computer Science and Technology from [Southwest Jiaotong University][swjtu].
 
-Here is my [R&eacute;sum&eacute;][r]
+
 
 Contact information:
 

@@ -1,0 +1,69 @@
+---
+layout: default
+title: Paper Review, ICOA, BMC problem
+date: 2020-12-1 11:23
+post-link:
+---
+
+
+
+## ICOA Paper Review
+
+#### What
+
+The goal of ICOA is to find the optimal set of billboards that can maximize the impression counts with regard to a dataset of trajectories under the constriction of budget
+
+This problem has never been studied, and is NP-hard to approximate (the logistic model is non-submodular, which means the effectiveness of the greedy approach cannot be guaranteed).
+
+#### How
+
+- To reach the tradeoff of the accuracy and efficiency
+  - The paper adopted Branch and Bound algorithm, to cut some branches if the upper bound estimation of this branch is lower than global lower bound.
+  - $\theta$ termination is used for early termination of the algorithm
+  - Progressive bounding method generates progressively decreasing thresholds for early termination. 
+    The greedy method is also modified to reduce a lot of repetitive computation.
+- To make the model submodular, the paper used a tangent line to estimate the upper bound of the greedy algorithm.
+
+#### Why
+
+- The effectiveness will be guaranteed by the sub-modularity of the modified model. Proofs are provided in the paper to demonstrate the effectiveness of the algorithm.
+- It is fast, because it adopts the greedy algorithm to select billboard.
+- The bound estimation algorithm will achieve a tighter upper bound if the cardinality of the $S^a$ increases.
+
+
+
+*Some parts of the proofs that are not obvious to me to understand, so, I wrote down some of my understandings below.*
+
+#### Theorem 4.1
+
+After adopting the Branch and Bound framework, it still has the same lower bound of $\frac{1}{2}(1-\frac{1}{e})I(OPT)$ as the BMC (Budget maximum coverage) framework. Firstly, the below formula holds,
+$$
+\Delta^{\uparrow}(S^{*}_{n}|S^a)+\Delta^{\uparrow}(o_{n+1}|S^a) \ge (1-\frac{1}{e})\Delta^{\uparrow}(OPT|S^a)
+$$
+According to the algorithm, $o_{n+1}$ is the first billboard considered in the $OPT$ set but not added to the $S^*$, Since it would violate the budget $B$. The algorithm returns either $o_{n+1}\cup S^a$ or the $S_n^*\cup S^a$ as the final set $\hat{S}$of this round of ComputeBound. So, $\Delta^{\uparrow}(\hat{S}|S^a) \ge \frac{1}{2}(1-\frac{1}{e})\Delta^{\uparrow}(OPT|S^a)$. By partitioning $\Delta(a|b)$ to  $I(a\cup b)-I(b)$, it's clear that $U(\hat{S}) =I^{\uparrow}(\hat{S})\ge\frac{1}{2}(1-\frac{1}{e})I^{\uparrow}(OPT|S^a)$, for all $S^a$. <u>The global lower bound should eventually be bigger or equal than the upper bound of any searched branches.</u> (for this part, I am not sure if my understanding is correct) So, we have
+$$
+I(\hat{S})\ge I^{\uparrow}(S)\ge\frac{1}{2}(1-\frac{1}{e})I^{\uparrow}(OPT)\ge\frac{1}{2}(1-\frac{1}{e})I(OPT)
+$$
+
+#### Lemma 5.1
+
+The proof of Lemma 5.1 is quite similar to the proof in the BMC paper, except that $\frac{\delta({o}, S^*)}{o.w}$ is bounded by $h(1+\epsilon)$, for all $o\in OPT\setminus (S^*\cup o_i)$  according to algorithm 3.
+
+#### Theorem 5.2
+
+Induction hypothesis can be used to prove that $\Delta^{\uparrow}(S_{n}^*|S^a)\ge(1-\prod_{i=1}^{i=n}(1-\frac{o_k.w}{(1+\epsilon)r}))\dot{}\Delta^{\uparrow}(OPT|S^a)$
+
+When $i =1$, $\Delta^{\uparrow}(S_1^*|S^a)\ge \frac{o_1.w}{(1+\epsilon)r}\cdot\Delta^{\uparrow}(OPT|S^a)$ holds, because this is a greedy algorithm, so, $\Delta^{\uparrow}(OPT|S^a) \le\Delta^{\uparrow}(S_1^*|S^a)\cdot\frac{r}{o_1.w}$.
+
+ When $i=1,..,n-1$, the above inequality holds, it can be shown that it also holds for $i=n$
+$$
+\begin{aligned}
+\Delta^{\uparrow}(S_{n}^*|S^a)&=(\Delta^{\uparrow}(S_{n}^*|S^a)-\Delta^{\uparrow}(S_{n-1}^*|S^a))+\Delta^{\uparrow}(S_{n-1}^*|S^a) \\
+&\ge \frac{o_{n}.w}{(1+\epsilon)r}\cdot(\Delta^{\uparrow}(OPT|S^a)-\Delta^{\uparrow}(S_{n-1}^*|S^a))+\Delta^{\uparrow}(S_{n-1}^*|S^a) \\
+&= \frac{o_{n}.w}{(1+\epsilon)r}\cdot\Delta^{\uparrow}(OPT|S^a)+(1-\frac{o_{n}.w}{(1+\epsilon)r})(\Delta^{\uparrow}(S_{n-1}^*|S^a) \\
+&\ge \frac{o_{n}.w}{(1+\epsilon)r}\cdot\Delta^{\uparrow}(OPT|S^a)+(1-\frac{o_{n}.w}{(1+\epsilon)r})(1-\prod_{i=1}^{i=n-1}(1-\frac{o_k.w}{(1+\epsilon)r}))\cdot\Delta^{\uparrow}(OPT|S^a) \\
+&= (1-\prod_{i=1}^{i=n}(1-\frac{o_k.w}{(1+\epsilon)r}))\dot{}\Delta^{\uparrow}(OPT|S^a)
+\end{aligned}
+$$
+The first inequality comes from lemma 5.1, the second inequality comes from the induction hypothesis.
+

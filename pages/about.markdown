@@ -15,7 +15,7 @@ Contact information:
 + WeChat:  AndrewShf
 + Github:    [AndrewShf][g]
 
-
+You can find my CV [here][r].
 
 [swjtu]: https://en.swjtu.edu.cn/
 [g]: https://github.com/AndrewShf

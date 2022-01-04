@@ -1,22 +1,13 @@
 ---
 layout: page
-title: Personal blogs
+title: Gallery
 ---
 
 # {{ page.title }}
 
++ <a href="{{ site.baseurl }}/pages/waterloo.html">Waterloo</a>, 2021 fall ~ Now
++ <a href="{{ site.baseurl }}/pages/singapore.html">Singapore</a>, 2019 fall
++ <a href="{{ site.baseurl }}/pages/japan.html">Japan</a>, 2018 summer
++ <a href="{{ site.baseurl }}/pages/america.html">America</a>, 2014 summer
++ <a href="{{ site.baseurl }}/pages/chengdu.html">Chengdu</a>, China, 1998~2020
 
-+ [卢昌海的博客][lu]
-+ [李航的博客][li]
-+ [刘未鹏的博客][liu]
-+ [Matrix67][ma]
-+ [Miskcoo's blog][mi]
-+ [zhenweiliu's blog][zhen]
-
-
-[lu]: https://www.changhai.org/index.php
-[li]: http://hangli-hl.com/blogs.html
-[mi]: http://blog.miskcoo.com/about
-[ma]: http://www.matrix67.com/
-[liu]: http://mindhacks.cn/
-[zhen]:<http://zhenweiliu.gitee.io/blog/>

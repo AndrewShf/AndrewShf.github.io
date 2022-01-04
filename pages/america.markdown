@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Singapore
+title: America
 ---
 
 # {{ page.title }}

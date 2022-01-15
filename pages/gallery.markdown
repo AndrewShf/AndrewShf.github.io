@@ -6,6 +6,7 @@ title: Gallery
 # {{ page.title }}
 
 + <a href="{{ site.baseurl }}/pages/waterloo.html">Waterloo</a>, 2021 fall ~ Now
++ <a href="{{ site.baseurl }}/pages/alberta.html">Alberta</a>,  2021 Winter
 + <a href="{{ site.baseurl }}/pages/singapore.html">Singapore</a>, 2019 fall
 + <a href="{{ site.baseurl }}/pages/japan.html">Japan</a>, 2018 summer
 + <a href="{{ site.baseurl }}/pages/america.html">America</a>, 2014 summer

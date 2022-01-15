@@ -20,3 +20,4 @@ title: Singapore
   ![](/images/singapore/ClarkeQuay.jpeg#center){:height="450px" width="600px"}(Night at Clarke Quay.)
   ![](/images/singapore/SingaporeBotanicGardens.jpeg#center){:height="450px" width="600px"}(People gathered at Singapore Botanic Garden, drinking, chatting and enjoying the livehouse)
   ![](/images/singapore/stage.jpeg#center){:height="450px" width="600px"}(The show at Singapore Botanic Garden)
+  ![](/images/singapore/westcoastpark.jpeg#center){:height="450px" width="600px"}(West coast park of Singapore)

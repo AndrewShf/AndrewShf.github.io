@@ -13,8 +13,6 @@ title: Favorite
 
 ***Soccer***
 
-![](/images/highschoolteam.JPG#center){:height="300px" width="350px"}
-![](/images/collegeteam.JPG#center){:height="300px" width="350px"}
 ![](/images/mefootball.JPG#center){:height="350px" width="350px"}
 
 [ny]:https://www.bilibili.com/video/av34664621/

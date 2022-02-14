@@ -14,6 +14,7 @@ title: Favorite
 ***Soccer***
 
 ![](/images/mefootball.JPG#center){:height="350px" width="350px"}
+![](/images/footballaward.jpeg#center){:height="350px" width="350px"}
 
 [ny]:https://www.bilibili.com/video/av34664621/
 [jd]:https://www.bilibili.com/video/BV1MW411o7KH?from=search&seid=6325135152821126423

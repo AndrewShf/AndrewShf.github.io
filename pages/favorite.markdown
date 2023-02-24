@@ -12,7 +12,7 @@ title: Favorite
 + [Neil Young][ny], [Lou Reed][lr], [Arcade Fire][af], [Elliot Smith][es], [Felt][fe], [Hikaru][Hikaru], [Jarvis Cocker][jc]
 
 ***Film***
-+ [一代宗师][grandmaster][clip2][grandmaster2]
++ [一代宗师][grandmaster], [clip2][grandmaster2]
 + [志明与春娇][zhiming]
 
 ***Soccer***

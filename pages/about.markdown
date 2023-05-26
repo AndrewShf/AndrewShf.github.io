@@ -11,11 +11,12 @@ Hi, I am Haifeng. I received my B.E. degree in Computer Science and Technology f
 
 Contact information:
 
-+ QQ: 793418743
-+ WeChat:  AndrewShf
++ LinkedIn: [Haifeng][link]
 + Github:    [AndrewShf][g]
 
 [swjtu]: https://en.swjtu.edu.cn/
 [g]: https://github.com/AndrewShf
 [r]: /CV-HaifengShi.pdf
+
+[link]: https://www.linkedin.com/in/haifeng-shi-732912191/
 

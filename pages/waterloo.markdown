@@ -14,3 +14,13 @@ title: Waterloo
 
   ![](/images/waterloo/soccer-summer.jpeg#center){:height="600px" width="600px"}(Soccer game outside CIF gym. The weather was perfect.)
 
+  ![](/images/waterloo/conrad.jpeg#center){:height="450px" width="600px"}(Campus near Conrad-Grebel college.)
+
++ ## Life in Waterloo
+
++ ![](/images/waterloo/skiiing.jpeg#center){:height="450px" width="600px"}(Go skiing.)
+
++ ![](/images/waterloo/winter.jpeg#center){:height="450px" width="600px"} (At the end of the year...)
+
++ ![](/images/waterloo/indigenous.jpeg#center){:height="450px" width="600px"} (Enjoy canadian indigenous food)
+

@@ -5,7 +5,7 @@ title: About
 
 # About me
 
-Hi there, I am Haifeng. I received my B.E. degree in Computer Science and Technology from [Southwest Jiaotong University][swjtu]. I am now a master student at University of Waterloo, forturnately supervised by Prof. Werner Dietl. Before that, I worked at Huawei Cloud for a year.
+Hi, I hold a BE and MAsc degree in Computer Science. I used to work in a cloud company for CDN development. I am interested in Software Quality Maintainance, AI and Cloud Computing.
 
 
 

@@ -5,6 +5,8 @@ title: Gallery
 
 # {{ page.title }}
 
+
++ <a href="{{ site.baseurl }}/pages/vancouver.html">Vancouver</a>, 2023 Christmas
 + <a href="{{ site.baseurl }}/pages/ottawa.html">Ottawa</a>, 2022 fall
 + <a href="{{ site.baseurl }}/pages/montreal.html">Montreal</a>, 2022 fall
 + <a href="{{ site.baseurl }}/pages/waterloo.html">Waterloo</a>, 2021 fall ~ Now

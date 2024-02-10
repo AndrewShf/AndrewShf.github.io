@@ -11,15 +11,9 @@ title: Favorite
 + [杨雪霏][yang],[杨灏][haoyang], [Glenn Gould][gg], [David Russell][dr], [Piazzolla][piazzolla]
 + [Neil Young][ny], [Lou Reed][lr], [Arcade Fire][af], [Elliot Smith][es], [Felt][fe], [Hikaru][Hikaru], [Jarvis Cocker][jc]
 
-***Film***
-+ [一代宗师][grandmaster], [clip2][grandmaster2]
-+ [志明与春娇][zhiming]
-
 ***Soccer***
 
 ![](/images/mefootball.JPG#center){:height="467px" width="350px"}
-![](/images/footballaward.jpeg#center){:height="350px" width="350px"}
-![](/images/guitarperform.jpeg#center){:height="467px" width="350px"}
 
 [ny]:https://www.bilibili.com/video/av34664621/
 [jd]:https://www.bilibili.com/video/BV1MW411o7KH?from=search&seid=6325135152821126423

@@ -5,6 +5,8 @@ title: Projects and Notes
 
 # {{ page.title }}
 
+
+* [Checker-Framewrok][CF]: Contributed to this great static analysis project. Actively used by Google.
 * [EMO-CD project][CD]: Evolutionary multi-objective community detection project (including implementations of NSGA-II, PESA-II, BBO, Harmony Search, PageRank, and other bio-inspired algorithms).
 * [Deep Learning Summary][dln]: Note from Cousera course taught by Andrew Ng (Chinese)
 * [AlgorithmW][algorithmw]: Tutorial for Hindley-Milner Inference algorithm.
@@ -15,3 +17,4 @@ title: Projects and Notes
 
 [algorithmw]: /project-AlgorithmW.pdf
 
+[CF]: https://eisop.github.io/cf/

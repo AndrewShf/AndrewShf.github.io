@@ -6,6 +6,7 @@ title: Gallery
 # {{ page.title }}
 
 
++ <a href="{{ site.baseurl }}/pages/mississauga.html">Mississauga</a>,  2024-2025
 + <a href="{{ site.baseurl }}/pages/vancouver.html">Vancouver</a>, 2023 Christmas
 + <a href="{{ site.baseurl }}/pages/alberta.html">Alberta</a>,  2023 Summer
 + <a href="{{ site.baseurl }}/pages/ottawa.html">Ottawa</a>, 2022 fall
